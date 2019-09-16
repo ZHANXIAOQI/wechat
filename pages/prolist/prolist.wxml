@@ -1,0 +1,27 @@
+<view class="pro">
+
+  <view class="item {{index % 2 == 0 ? 'a' : 'b'}}" wx:for="{{lazyList}}" wx:key="{{index}}">
+    <view bindtap="previewDetail" data-id="{{item.id}}">
+    <!-- data-id: previewDetail需要使用的参数 -->
+      <image class="auto-img" mode="widthFix" src="{{item.img}}"></image>
+    </view>
+    <view class="pro-info">
+      <view class="pro-name">{{item.name}}</view>
+      <view class="clearfix price-box">
+        <view class="fl clearfix price">
+          <view class="fl pri">￥{{item.price}}</view>
+          <view class="fl buy" wx:if="{{item.isHot}}">{{item.hotText}}</view>
+        </view>
+        <view class="fr same">看相似</view>
+      </view>
+      <view class="vip">
+        <text class="fl" wx:if="{{item.isPlus}}">plus</text>
+        <view class="fr like" bindtap="like" data-id="{{item.id}}" data-index="{{index}}">
+          <image class="auto-img" mode="widthFix" src="{{item.heart}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="not-data" wx:if="{{isNone}}">我是有底线的!</view>
+</view>

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/prolist/prolist",
+    "pages/home/home",
+    "pages/find/find",
+    "pages/like/like",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1AAD19",
+    "navigationBarTitleText": "商店选购",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1AAD19",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home_active.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "./images/find.png",
+        "selectedIconPath": "./images/find_active.png"
+      },
+      {
+        "pagePath": "pages/prolist/prolist",
+        "text": "商店",
+        "iconPath": "./images/prolist.png",
+        "selectedIconPath": "./images/prolist_active.png"
+      },
+      {
+        "pagePath": "pages/like/like",
+        "text": "喜欢",
+        "iconPath": "./images/like.png",
+        "selectedIconPath": "./images/like_active.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+<view class="detail">
+  <view>
+    <image class="auto-img" mode="widthFix" src="{{currentPro.img}}"></image>
+  </view>
+  <view>{{currentPro.name}}</view>
+  <view>￥{{currentPro.price}}</view>
+</view>

@@ -1,0 +1,7 @@
+<view class="home">
+  <swiper style="height: {{swiperHeight}}px;" indicator-dots="{{isHasDots}}" indicator-color="{{dotsColor}}" indicator-active-color="{{dotsActiveColor}}" autoplay="{{isAutoPlay}}" interval="{{interval}}" duration="{{duration}}" circular="{{isCircular}}">
+    <swiper-item wx:for="{{swiperImgs}}" wx:key="{{index}}">
+      <image class="auto-img" mode="widthFix" bindload="loadedImg" src="{{item.img}}"></image>
+    </swiper-item>
+  </swiper>
+</view>

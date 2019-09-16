@@ -1,0 +1,17 @@
+.auto-img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.clearfix{
+  overflow: hidden;
+}
